@@ -41,7 +41,7 @@ table {
 }
 
 caption, th, td {
-  text-align: left;
+  //text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
@@ -686,7 +686,7 @@ body.page .post-title {
   /* tablet */
   .pagetop {
     right: 20px;
-    bottom: 20px;
+    bottom: 40px;
   }
 
   /* tablet end */
