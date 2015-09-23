@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 /*   
 Theme Name: XeoryBase
 Theme URI: http://xeory.jp/
@@ -269,7 +269,7 @@ form button:hover {
   display: block;
   border-top: 1px #efefef solid;
   margin-top: -1px;
-  padding: 20px 0px;
+  padding: 4px 0px;
   color: #2B2D2D;
   background: #fff;
   text-decoration: none;
@@ -409,7 +409,7 @@ article.page .post-title {
 }
 
 .post-content {
-  padding: 42px 64px;
+  padding: 25px 64px 3px 64px;
   overflow: hidden;
 }
 .post-content hr {
@@ -456,7 +456,7 @@ article.page .post-title {
 }
 .post-content table th,
 .post-content table td {
-  padding: 8px 10px;
+  padding: 8px 5px;
   border: #ddd solid 1px;
 }
 .post-content table th {
@@ -671,6 +671,7 @@ article.page .post-title {
 
 .post-sns {
   border-top: 1px #eee solid;
+  border-bottom: 1px #eee solid;
   margin: 0 -45px -30px;
   padding: 0;
 }
@@ -1053,7 +1054,7 @@ div.post-share-fb .fb_iframe_widget span {
 }
 .post-loop-wrap .post-content {
   width: auto;
-  padding: 0 64px 42px;
+  padding: 0 64px 10px;
 }
 .post-loop-wrap .post-footer {
   border-top: 1px #efefef solid;
@@ -1183,6 +1184,7 @@ div.post-share-fb .fb_iframe_widget span {
   padding-left: 36px;
   display: block;
   background: url('lib/images/icont_arw_lit.png?1418372717') left center no-repeat;
+  display: inline-block; /*–追加編集 カテゴリーの投稿数を横に配置 –*/
 }
 .widget_recent_entries a:hover,
 .widget_archive a:hover,
@@ -1713,14 +1715,20 @@ div.post-share-fb .fb_iframe_widget span {
     padding: 42px 20px 20px;
   }
 
-  .post-content,
   .cta-post-title,
   .post-cta,
   .post-cta-inner,
-  .post-share,
   .post-author,
   article.page .post-header {
     padding: 20px !important;
+  }
+
+  .post-content {
+    padding: 20px 20px 0px !important;
+  }
+
+  .post-share {
+    padding: 0px 20px !important;
   }
 
   .post-thumbnail,
